@@ -48,14 +48,14 @@ def browse_folder():
     folder_selected = filedialog.askdirectory()
     source_path_var.set(folder_selected)
 
-# Create the main window
+#GUI START
 root = tk.Tk()
 root.title("File Organizer")
 
-# Create and set a Tkinter StringVar for the source path
+
 source_path_var = tk.StringVar()
 
-# Create and place widgets
+
 label_source = tk.Label(root, text="Select Source Folder:")
 label_source.grid(row=0, column=0, padx=10, pady=10)
 
@@ -71,5 +71,5 @@ button_organize.grid(row=1, column=0, columnspan=3, pady=10)
 output_text = tk.Text(root, height=10, width=60)
 output_text.grid(row=2, column=0, columnspan=3, padx=10, pady=10)
 
-# Start the Tkinter event loop
+
 root.mainloop()
